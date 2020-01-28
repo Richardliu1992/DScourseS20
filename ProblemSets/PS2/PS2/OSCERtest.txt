@@ -1,2 +1,0 @@
-This line came from the CLI
-This new line also from the CLI
