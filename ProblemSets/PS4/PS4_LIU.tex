@@ -1,0 +1,59 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+
+\usepackage{geometry}
+\geometry{a4paper,left=2cm,right=2cm,top=1cm,bottom=1cm}
+
+\begin{document}
+	\begin{center}
+		Data Science
+		
+		Ruichun Liu
+		
+		Problem Set 4
+	\end{center}
+\begin{enumerate}
+
+    \item \textbf{Data sources}
+		  \begin{description}
+	            \item[]	1.1 Housing price in my hometown.
+                  	      
+	            \item[] 1.2 Country music songs in recent years.
+                  	  
+	            \item[] 1.3 Top 5 Econ journal papers within 5 years.
+                      
+          \end{description}
+
+    \item \textbf{Question 5}
+		  \begin{description}
+	            \item[]	5.d Check what type of object mydf is. What type of an object is mydf\$players?
+                  	 \begin{itemize} 
+	                       \item   class(mydf): "list".
+	                       \item   class(mydf\$players):"data.frame".
+                     \end{itemize}      
+          \end{description}
+          
+    \item \textbf{Question 6}
+		  \begin{description}
+	            \item[]	6.4 Verify that the two dataframe are different types: type    class(df1) and class(df). What is the class of each?
+                  	 \begin{itemize} 
+	                       \item   class(df1): "data.frame".
+	                       \item   class(df):"SparkDataFrame".
+                     \end{itemize}  
+                     
+	            \item[] 6.5.d If you try the previous command on df1, what happens? Why do you think that happened?
+                  	 \begin{itemize} 
+	                       \item There is an error message. The reason might be that they are different types of files. The df1 is data.frame file, but the df is SparkDataFrame.
+                     \end{itemize} 
+                     
+	            \item[] 6.6.b If you again try the previous command on df1, what happens? Why do you think that happened?
+                  	 \begin{itemize} 
+	                       \item There is an error message. The reason might be that they are different types of files. The df1 is data.frame file, but the df is SparkDataFrame.
+                     \end{itemize}                     
+          \end{description}
+          
+\end{enumerate}
+\end{document}
