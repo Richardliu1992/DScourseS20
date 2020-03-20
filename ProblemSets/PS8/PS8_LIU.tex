@@ -1,0 +1,117 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+
+\usepackage{geometry}
+\geometry{a4paper,left=2cm,right=2cm,top=1cm,bottom=1cm}
+
+\begin{document}
+	\begin{center}
+		Data Science
+		
+		Ruichun Liu
+		
+		Problem Set 8
+	\end{center}
+\begin{enumerate}
+
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Fri Mar 20 17:26:55 2020
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrrrrrr}
+  \hline
+ & beta & beta\_OLS & beta\_GD & beta\_OLS\_L & beta\_OLS\_NM & beta\_MLE & beta\_LM \\ 
+  \hline
+X1 & 1.50 & 1.50 & 1.50 & 1.50 & 1.50 & 1.13 & 1.50 \\ 
+  X2 & -1.00 & -0.99 & -0.99 & -0.99 & -0.99 & -1.09 & -0.99 \\ 
+  X3 & -0.25 & -0.25 & -0.25 & -0.25 & -0.25 & -0.30 & -0.25 \\ 
+  X4 & 0.75 & 0.74 & 0.74 & 0.74 & 0.74 & 0.76 & 0.74 \\ 
+  X5 & 3.50 & 3.50 & 3.50 & 3.50 & 3.50 & 3.73 & 3.50 \\ 
+  X6 & -2.00 & -2.00 & -2.00 & -2.00 & -2.00 & -2.18 & -2.00 \\ 
+  X7 & 0.50 & 0.50 & 0.50 & 0.50 & 0.50 & 0.47 & 0.50 \\ 
+  X8 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 \\ 
+  X9 & 1.25 & 1.26 & 1.26 & 1.26 & 1.26 & 1.31 & 1.26 \\ 
+  X10 & 2.00 & 2.00 & 2.00 & 2.00 & 2.00 & 2.14 & 2.00 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+    \item \textbf{Question 5} How does your estimate compare with the true value of $\beta$ in (1)?
+
+		  \begin{description}
+	            From the column beta\_OLS, we can see that my estimates are very close to the true value.      
+          \end{description}
+          
+    \item \textbf{Question 7} Do your answers differ?
+		  \begin{description}
+               From the column beta\_OLS\_L and beta\_OLS\_NM, we can see that the results of two different methods are the exactly same.         
+          \end{description}
+          
+    \item \textbf{Question 9} In your .tex file, tell me
+          about how similar your estimates of $\beta$ are to the “ground truth”  that you used to
+          create the data in (1).
+
+		  \begin{description}
+               From the table 1 on next page, we can find that each of the variables is significant under $ p<0.01$.        
+          \end{description}
+          
+          % Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Fri, Mar 20, 2020 - 5:49:58 PM
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-2} 
+\\[-1.8ex] & Y \\ 
+\hline \\[-1.8ex] 
+ X1 & 1.501$^{***}$ \\ 
+  & (0.002) \\ 
+  & \\ 
+ X2 & $-$0.991$^{***}$ \\ 
+  & (0.003) \\ 
+  & \\ 
+ X3 & $-$0.247$^{***}$ \\ 
+  & (0.003) \\ 
+  & \\ 
+ X4 & 0.744$^{***}$ \\ 
+  & (0.003) \\ 
+  & \\ 
+ X5 & 3.504$^{***}$ \\ 
+  & (0.003) \\ 
+  & \\ 
+ X6 & $-$1.999$^{***}$ \\ 
+  & (0.003) \\ 
+  & \\ 
+ X7 & 0.502$^{***}$ \\ 
+  & (0.003) \\ 
+  & \\ 
+ X8 & 0.997$^{***}$ \\ 
+  & (0.003) \\ 
+  & \\ 
+ X9 & 1.256$^{***}$ \\ 
+  & (0.003) \\ 
+  & \\ 
+ X10 & 1.999$^{***}$ \\ 
+  & (0.003) \\ 
+  & \\ 
+\hline \\[-1.8ex] 
+Observations & 100,000 \\ 
+R$^{2}$ & 0.971 \\ 
+Adjusted R$^{2}$ & 0.971 \\ 
+Residual Std. Error & 0.500 (df = 99990) \\ 
+F Statistic & 338,240.000$^{***}$ (df = 10; 99990) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+          
+\end{enumerate}
+\end{document}
