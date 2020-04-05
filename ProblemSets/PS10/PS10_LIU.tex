@@ -1,0 +1,89 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+
+\usepackage{geometry}
+\geometry{a4paper,left=2cm,right=2cm,top=1cm,bottom=1cm}
+
+\begin{document}
+	\begin{center}
+		Data Science
+		
+		Ruichun Liu
+		
+		Problem Set 10
+	\end{center}
+\begin{enumerate}
+
+    \item \textbf{Question 9} As a table in your .tex file, report the       optimal values of the tuning parameters for each
+          of the algorithms. How does each algorithm’s out-of-sample performance compare with each of the other algorithms?\\
+          
+          From the last table, we can find that Tree Model, Logit Model, and kNN model have similar values for f1. Neural Model and SVM model have the similar values for f1. Naive Model has the lowest value for f1.\\
+          
+          From the last table, we can also find that Tree Model and Logit Model have the similar values for gmean which are lower than the values of other four models. 
+          
+          
+          
+
+
+		  
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+Model & f1        & gmean     & minsplit & minbucket & cp     \\ \hline
+Tree  & 0.8901134 & 0.6856084 & 10       & 6         & 0.0269 \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+Model & f1        & gmean     & lambda & alpha \\ \hline
+Logit & 0.8971736 & 0.6620844 & 0.0263 & 0.786 \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+Model  & f1        & gmean     & size & decay & maxit \\ \hline
+Neural & 0.9062491 & 0.7563870 & 9    & 0.19  & 1000  \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+Model & f1        & gmean     & k  \\ \hline
+kNN   & 0.8975309 & 0.7467755 & 27 \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+Model & f1        & gmean     & kernel & cost & gamma \\ \hline
+SVM   & 0.9056775 & 0.7350348 & radial & 1    & 0.25  \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+Performance & Tree      & Logit     & Neural    & Naive     & kNN       & SVM       \\ \hline
+f1            & 0.8955385 & 0.8970978 & 0.9071590 & 0.8843005 & 0.8965099 & 0.9046041 \\ \hline
+gmean         & 0.6578865 & 0.6615253 & 0.7560003 & 0.7263803 & 0.7439890 & 0.7347130 \\ \hline
+\end{tabular}
+\end{table}
+
+\end{enumerate}
+\end{document}
+
