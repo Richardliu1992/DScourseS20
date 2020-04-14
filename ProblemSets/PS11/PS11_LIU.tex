@@ -1,0 +1,150 @@
+\documentclass[12pt,english]{article}
+\usepackage{mathptmx}
+
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{darkblue}{RGB}{0.,0.,139.}
+
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{lipsum}
+
+\usepackage[authoryear]{natbib}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage[flushleft]{threeparttable}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage{pdflscape}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=true,pdfborder={0 0 0},backref=false,
+ colorlinks,citecolor=black,filecolor=black,
+ linkcolor=black,urlcolor=black]
+ {hyperref}
+\usepackage[all]{hypcap} % Links point to top of image, builds on hyperref
+\usepackage{breakurl}    % Allows urls to wrap, including hyperref
+
+\linespread{2}
+
+\begin{document}
+
+\begin{singlespace}
+\title{The Impact of Education Funding on High School Enrollment Rate\thanks{Acknowledgements here, if any.}}
+\end{singlespace}
+
+\author{Ruichun Liu\thanks{Department of Economics, University of Oklahoma.\
+E-mail~address:~\href{mailto:Ruichun.liu-1@ou.edu}{Ruichun.liu-1@ou.edu}}}
+
+% \date{\today}
+\date{April 10, 2020}
+
+\maketitle
+
+\begin{abstract}
+\begin{singlespace}
+Different countries have different education system. In China, almost all schools are public schools. Education funding is provided my the government. Students in China can enjoy 9 years free education, including attending primary and junior high school. Whether or not a student can be accepted by high school is very essential because that is the only way for most of them to take the College Entrance Exam and study at a college or university in the future.This research paper investigates the effect of education funding on high school enrollment rate in China by using a panel dataset of 31 provinces during 2005 to 2017. In this paper, I am going to use a fixed effect model to analyze whether the education funding would have a significant effect on high school enrollment rate. At the same time, the results of this paper could also provide some advice based on my finding.
+\end{singlespace}
+
+\end{abstract}
+\vfill{}
+
+
+\pagebreak{}
+
+
+\section{Introduction}\label{sec:intro}
+Education funding provided by the goverment is very important to be well spent in order to improve the educational level for each country. In China, almost all schools are public schools which are funded by the government. It is very essential to properly distribute education funding to each level of schools. Taking The Academic Test for the Junior High School Students is the only way for students to attend high schools after their nine-year compulsory education. This is also very important because attending high school is also the only way for students to take the Colledge Entrance Exam which can determine whehter they can go to colleges or universities.In this research paper, I will focus on whether the education funding would affect the high school enrollment rate.\\
+
+In this section, I will provide more details about:
+	     \begin{itemize} 
+	           \item how the government distributes education funding in China
+        	   \item education systems in China
+        	   \item comparision of education system between different countries.
+        	   \item data resource and method I am going to use.
+        	   \item main results
+        	   \item structure of this paper.
+         \end{itemize}
+
+\section{Literature Review}\label{sec:litreview}
+Education funding has been a very popular topic. Many researchers are doing research on the relationship between education funding and other factors, such as GPD growth and higher education development. However, there are not many papers talking about the relationship between education funding and high school enrollment rate. The main reason might be that different countries have different education systems. 
+
+I am still working on collecting more papers on this topic.
+
+In this section, I will provide more details about:
+	     \begin{itemize} 
+	           \item research on education funding and completion rate in different countries
+	           \item research on education funding and completion rate specifically in China
+         \end{itemize} 
+
+
+
+\section{Data}\label{sec:data}
+This research paper investigates the effect of education funding on high school enrollment rate in China by using a panel dataset of 31 provinces during 2005 to 2017. I collect the dataset from multiple resources, including National Bureau of Statistics of China, CNKI database, and CEinet Statistics Database.  \ref{tab:descriptives} contains summary statistics.
+
+In this section, I will provide more details about:
+	     \begin{itemize} 
+	           \item how I calculate funding per pupil
+	           \item how to estimate total student number 
+	           \item how I clean the dataset 
+         \end{itemize}
+         
+
+\section{Empirical Methods}\label{sec:methods}
+
+In this section, I will provide more details about steps:
+	     \begin{itemize} 
+	           \item Run Pearson and Spearman test to see the relationship between each variable.
+	           \item Run a Hausman test to determine which model I am going to use.
+	           \item Run either Two-Way Fixed Model or Fixed Effect Model.
+	           \item Run robust test to see if results are robust.
+         \end{itemize}
+
+\begin{equation}
+\label{eq:1}
+Enrollment_{it}=\alpha_{0} + \alpha_{1}EF_{it} + \alpha_{2} X_{it} + \varepsilon,
+\end{equation}
+where $Enrollment_{it}$ is high school enrollment rate for province $i$ in year $t$, and $EF_{it}$ is education funding at province $i$, while $X_{it}$ are other control variables. The parameter of interest is $\alpha_{1}$ which indicates the percent of effect of education funding on high school enrollment rate.
+
+
+
+\section{Research Findings}\label{sec:results}
+
+In this section, I will provide more details based on my result from Fixed-Effect model:
+	     \begin{itemize} 
+	           \item how much education funding has effect on high school enrollment funding
+	           \item positive or negative 
+	           \item how to explain the effect
+         \end{itemize}
+
+
+\section{Conclusion}\label{sec:conclusion}
+In this section, I will provide more details about
+	     \begin{itemize} 
+	           \item background of this topic
+	           \item result of this topic
+	           \item meaning of this topic
+	           \item advice on how to properly distribute education funding based on my finding.
+         \end{itemize}
+
+\vfill
+\pagebreak{}
+\begin{spacing}{1.0}
+\bibliographystyle{jpe}
+\bibliography{PS11_LIU.bib}
+\addcontentsline{toc}{section}{References}
+\end{spacing}
+Since I am still working on literature review, I will list all my refereces here once I am done with it.
+
+
+\vfill
+\pagebreak{}
+\clearpage
+
+
+
+\end{document}
